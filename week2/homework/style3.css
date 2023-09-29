@@ -1,16 +1,9 @@
 img{
-    width: 100%;
+    width: 75%;
 }
 
 main, header{
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(255, 255, 255);
-}
-
-main, header{
-    width: 500px;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(255, 255, 255);
@@ -47,7 +40,15 @@ a {
     color:rgb(198, 34, 34)
 }
 
-@media (min-width:100px){
+@media (min-width:1005px){
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav ul li{
+        border: none;
+        padding: 0;
+    }
     .white-text {
         color:rgb(254, 254, 254)
     }
@@ -62,7 +63,7 @@ a {
     }
 }
 
-@media (min-width:100px){
+@media (min-width:1604px){
     nav ul {
         flex-direction: row;
         justify-content: space-between;
@@ -71,10 +72,6 @@ a {
         border: none;
         padding: 0;
     }
-}
-
-
-@media (min-width: 400px) {
     .white-text {
         color:rgb(0, 0, 0)
     }
