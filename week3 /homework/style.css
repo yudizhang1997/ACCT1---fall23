@@ -1,0 +1,46 @@
+body {
+    text-align: center; /* Center-align text content */
+    margin: 0 auto; /* Center horizontally by setting left and right margins to auto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh; /* Center vertically by using viewport height */
+    background-color: black;
+}
+
+
+
+#BTNImage{
+    width: 170px;
+    height: 220px;
+}
+
+
+#btn1{
+    border: 5;
+    background-size: auto;
+    background-image: url(cocona.png);
+    border: 5px solid rgb(9, 40, 241);
+}
+
+#btn2{
+    border: 5;
+    background-size: auto;
+    background-image: url(maya.jpeg);
+    border: 5px solid rgb(255, 125, 38);
+}
+
+#btn3{
+    border: 5;
+    background-size: auto;
+    background-image: url(harvey.png);
+    border: 5px solid rgb(141, 249, 224);
+}
+
+#btn4{
+    border: 5;
+    background-size: auto;
+    background-image: url(jurin.jpeg);
+    border: 5px solid rgb(92, 35, 236);
+}
