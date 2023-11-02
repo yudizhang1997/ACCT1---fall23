@@ -1,0 +1,13 @@
+.column {
+    float: left;
+    width: 25%;
+    padding: 50px;
+    height: auto;
+}
+
+img {
+    width: 80%;
+    height:auto;
+    padding-left: auto;
+    padding-right: auto;
+}
