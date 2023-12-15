@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment: Find your interface</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+        .media {
+            /* Adjust this to handle media (images and videos) */
+        }
+        .images-container {
+            display: flex;
+            flex-direction: column; /* 更改为按列排列 */
+            align-items: center; /* 居中对齐 */
+        }
+        .images-container img {
+            max-width: 80%; /* 调整宽度以适应屏幕 */
+            height: auto; /* 维持纵横比 */
+            margin-bottom: 20px; /* 在图片之间添加一些间隔 */
+        }
+        body {
+            background-color: white;
+            color: black;
+        }
+        h1, h2, h3, h4, p {
+            color: black;
+        }
+        h3 {
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-style: italic;
+        }
+    </style>    
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <h1>Assignment: Find your interface</h1>
+            <h2>by Yudi Zhang</h2>
+            <h3>My Project Description goal: Game Instagram AR Filter </h3>
+            <p>the game AR filters GOWAAA created for Singapore Tourism Board (STB) showcases Merli, the ambassador of Singapore, riding towards the screen collecting landmark coins. The filter is completed with background visuals, animations designed by GOWAAA, and sound effects to provide an overall cute look of the Merli game. </p>
+        </div>
+        <div class="column media">
+            <h3>Picture of my example: </h3>
+            <div class="images-container">
+                <img src="1.png" alt="arduino">
+                <img src="2.png" alt="arduino">
+                <img src="3.png" alt="arduino">
+                <img src="4.png" alt="arduino">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
