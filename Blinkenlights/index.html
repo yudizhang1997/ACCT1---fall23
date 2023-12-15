@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment: Blinkenlights</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+        .media {
+            /* Adjust this to handle media (images and videos) */
+        }
+        .images-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .images-container img {
+            max-width: 40%; /* Adjust as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+        body {
+            background-color: white; /* 背景设置为黑色 */
+            color: black; /* 文字颜色设置为白色 */
+        }
+        h1, h2, h3, h4, p {
+            color: black; /* 确保所有标题和段落的文字颜色为白色 */
+        }
+        h3 {
+            margin-bottom: 10px; /* 或更小的值，根据需要调整 */
+        }
+        h2 {
+        font-style: italic;
+        }
+    </style>    
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <h1>Assignment: Blinkenlights</h1>
+            <h2>Project Name: Morse Code - ZYD</h2>
+            <h2>by Yudi Zhang</h2>
+            <h3>Project Description: </h3>
+            <p>I used my led lights to create three rhythmic patterns based on Morse code and the message it hides is Z-Y-D.
+            Materials used: ESP32 feather, dupont wire, resistors, led light.</p>
+            <h3>Coding Documentation: </h3>
+            <h4>first step - assembling</h4>
+            <p>I connect all the materials mentioned above to a breadboard and ready to coding.</p>
+            <h4>second step - arduino coding</h4>
+            <div class="images-container">
+                <img src="arduinomorse.png" alt="arduino" style="max-width: 90%;">
+            </div>
+            <p>I used in arduino, first to set up my led lights with HIGH and LOW; then designed my blinking frequency to be long and short, long and short, long and short.</p>
+            <h4>thrid step - code testing</h4>
+            <p>To ensure results, I first tested to use a button to control the frequencies of all three lights in turn. The test video is also attached.</p>
+        </div>
+        <div class="column media">
+            <h3>Project Video: morse code Z-Y-D</h3>
+            <div class="video-container">
+                <video width="600" height="440" controls>
+                    <source src="morsecode ZYD.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h3>Project Video: testing</h3>
+            <div class="video-container">
+                <video width="600" height="440" controls>
+                    <source src="testing.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
