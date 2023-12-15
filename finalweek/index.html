@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment: Multi-channel music controller</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+        .media {
+            /* Adjust this to handle media (images and videos) */
+        }
+        .images-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .images-container img {
+            max-width: 40%; /* Adjust as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+        body {
+            background-color: white; /* 背景设置为黑色 */
+            color: black; /* 文字颜色设置为白色 */
+        }
+        h1, h2, h3, h4, p {
+            color: black; /* 确保所有标题和段落的文字颜色为白色 */
+        }
+        h3 {
+            margin-bottom: 10px; /* 或更小的值，根据需要调整 */
+        }
+        h2 {
+        font-style: italic;
+        }
+    </style>    
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <h1>Assignment: Multi-channel music controller</h1>
+            <h2>Project Name: Dev year band: Keyboard Simulator</h2>
+            <h2>by Yudi Zhang</h2>
+            <h3>Project Description: </h3>
+            <p>It's a little device that has eight buttons on a prototype of an octave keyboard to simulate a mixer.
+            Materials used: ESP32 feather, dupont wire, resistors, buttons, card boards, soldering gun and double sided tape.</p>
+            <h3>Coding Documentation: </h3>
+            <h4>first step - assembling</h4>
+            <p>I connect all the materials mentioned above to a breadboard and ready to coding.</p>
+            <h4>second step - arduino coding</h4>
+            <div class="images-container">
+                <img src="keyboardarduino.png" alt="arduino" style="max-width: 60%;">
+            </div>
+            <p>I'm using an arduino to write the coding to allow the buttons to control the corresponding audio; and to allow the buttons to start playing the audio file in a loop when pressed once, and to stop playing when pressed again.</p>
+            <h4>thrid step - processing coding</h4>
+            <div class="images-container">
+                <img src="kp1.png" alt="kp1" style="max-width: 80%;">
+            </div>
+            <p>I then use the Processing language to write the code that controls the audio file and plays the audio file based on the signal received from the Arduino. When a string starting with "P" is received, the program either starts playing the corresponding audio file in a loop (if it is not currently playing) or stops playing the audio file (if it is playing). In addition, the program draws a rectangle on the graphical interface for each audio file and visualizes the audio playback state by changing the color of the rectangle (gray for playing, white for not playing).</p>
+            <h4>final step</h4>
+            <p>run and record with my band members! please check the videos ont he right side!</p>
+        </div>
+        <div class="column media">
+            <div class="images-container">
+                <img src="keyboard1.jpg" alt="1" style="max-width: 90%;">
+            </div>
+            <h3>Project Video: solo</h3>
+            <div class="video-container">
+                <video width="600" height="440" controls>
+                    <source src="solo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <h3>Project Video: ensemble with Zhuo</h3>
+            <div class="video-container">
+                <video width="600" height="440" controls>
+                    <source src="ensemble.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <h3>Project Video: ensemble with Zhuo and Lexie</h3>
+            <div class="video-container">
+                <video width="600" height="440" controls>
+                    <source src="ensemble2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
