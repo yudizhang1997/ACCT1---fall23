@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Assignment: Find your interface</title>
+    <title>Assignment: Finish your interface</title>
     <style>
         .container {
             display: flex;
@@ -15,11 +15,13 @@
         }
         .images-container {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column; /* 设置为纵向布局 */
+            align-items: center; /* 将子元素居中对齐 */
         }
         .images-container img {
-            max-width: 40%; /* Adjust as needed */
-            height: auto; /* Maintain aspect ratio */
+            max-width: 80%; /* 调整最大宽度 */
+            height: auto; /* 保持纵横比 */
+            margin-bottom: 20px; /* 在图片之间添加间隔 */
         }
         .video-container {
             display: flex;
@@ -44,19 +46,34 @@
 <body>
     <div class="container">
         <div class="column">
-            <h1>Assignment: Find your interfacee</h1>
+            <h1>Assignment: Finish your interface</h1>
             <h2>by Yudi Zhang</h2>
-            <h3>My Ideal Project Description: </h3>
-            <p>I want the screen to have a star, buttons to control the random change of the background color, and a potentiometer to control the size of the star. And in this way to have a preliminary experience with multi-controller.</p>
+            <h3>Project Description: </h3>
+            <p>Like the reference I found last week, based on ml5j's face-api, I'd like to make a webcam interactive filter game using p5js. When it starts running, the webcam recognizes the user's face and lets the user's face control a red circle; the circle will run forward at the bottom of the screen while yellow dots randomly appear, and when the user controls the red circle and touches the yellow dots, it disappears and displays a score on the screen.</p>
+            <h3>Coding Documentation: </h3>
+            <h4>Project setup</h4>
+            <p>1.First, create an HTML file and bring in the p5.js and ml5.js libraries.</p> 
+            <h4>Initialize Webcam and Facial Recognition</h4>
+            <p>2.In the sketch.js file, setup() function of p5.js to initialize webcam and Face API of ml5.js.</p>
+            <h4>Create red circle and yellow dot</h4>
+            <p>3.In sketch.js, define a red circle and a set of randomly appearing dots.</p>
+            <h4>Control the red circle</h4>
+            <p>4.Use facial recognition data to control the movement of the red circle.</p>
+            <h4>PHandling interactions and collision detection</h4>
+            <p>5.In the draw() function, draw the red circle and the star and detect collisions between them.</p>
+            <h3>Code Screenshots: </h3>
+            <div class="images-container">
+                <img src="1.png" alt="arduino" style="max-width: 80%;">
+                <img src="2.png" alt="arduino" style="max-width: 80%;">
+                <img src="3.png" alt="arduino" style="max-width: 80%;">
+            </div>
         </div>
         <div class="column media">
-            <h3>Picture Demo: </h3>
-            <div class="images-container">
-                <img src="multicprocessing.png" alt="arduino" style="max-width: 90%;">
-            </div>
             <h3>Video Demo: </h3>
-            <div class="images-container">
-                <img src="multicarduino.png" alt="arduino" style="max-width: 90%;">
+            <div class="video-container">
+                <video width="600" height="440" controls>
+                    <source src="game.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
     </div>
